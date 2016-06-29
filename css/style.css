@@ -274,7 +274,7 @@ blockquote p {
 	background:#fff;
 }
 .pad-con {
-	padding-top:80px;
+	padding-top:120px;
 }
 .content:before {
 	content:'';
@@ -3704,7 +3704,7 @@ header {
 	float:left;
 	padding-left:30px;
 }
-.inline-facts-holder:before  , .show-share span , .fixed-footer   , .height-emulator , .sect-subtitle  , .content:before , .content-footer:before , nav ul li ul:before , nav li a.act-link:before , .control-panel , .close-sidebar , .fix-con-panel , .nicescroll-rails {
+.inline-facts-holder:before  , .show-share span , .fixed-footer   , .height-emulator , .sect-subtitle  , .content:before , .content-footer:before , nav ul li ul:before , nav li a.act-link:before , .control-panel , .fix-con-panel , .nicescroll-rails {
 	display:none;
 }
 .particular {
@@ -3874,14 +3874,8 @@ nav li a.act-link {
 	padding-left:0;
 }
 .hid-sidebar {
-	position:relative;
-	top:0;
-	left:0;
 	height:auto;
-	float:left;
 	width:100%;
-	display:block;
-	background:#fff;
 }
 .horizontal_item img{
 	width:100%;
@@ -3896,7 +3890,7 @@ nav li a.act-link {
     float: left;
     width: 100%;
     position: relative;
-    padding: 50px 0;
+    padding: 50px 15px;
 	margin-bottom:0;
 }
 .ogm {

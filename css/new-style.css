@@ -263,7 +263,19 @@ header.fixed .nav-holder{
 .social-list a:last-child{
 	margin-right: 0;
 }
-
+.inline-filter{
+	padding-bottom: 20px;
+	margin-top: 50px;
+}
+.custom-link-holder{
+	text-align: center;
+}
+.works_cat{
+	padding-top: 0;
+}
+.works_cat .gallery-items{
+	margin-top: 0;
+}
 @media(max-width: 1036px){
 	header{
 		height: 80px;
