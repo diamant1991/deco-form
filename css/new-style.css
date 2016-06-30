@@ -276,9 +276,63 @@ header.fixed .nav-holder{
 .works_cat .gallery-items{
 	margin-top: 0;
 }
+.filter-button{
+	margin-right: 40px;
+	position: relative;
+}
+.filter-button:after{
+	content: "";
+	position: absolute;
+	right: -35px;
+	top: 12px;
+	width: 30px;
+  height: 1px;
+  background: rgba(255,255,255,0.41);
+}
+.filter-button.non-mrg{
+	margin-right: 0;
+}
+.filter-button.non-mrg:after{
+	content: none;
+}
+.round-filter{
+	width: auto;
+}
+.round-counter:after{
+	content: none;
+}
+.logo-company img{
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+.logo-company{
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+}
+.grid-item-text{
+	position: relative;
+	padding-left: 60px;
+	min-height: 50px;
+}
+.breadcrumb{
+	padding: 15px 0;
+}
+.breadcrumb .creat-list li a{
+	font-weight: 600;
+}
+.description{
+	text-align: left;
+}
+
 @media(max-width: 1036px){
 	header{
 		height: 80px;
 		position: fixed;
+	}
+	section{
+		padding-top: 80px;
 	}
 }

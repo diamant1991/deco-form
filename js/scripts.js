@@ -485,26 +485,38 @@ function initMonolit() {
     $(window).load(function() {
         n();
     });
-	$(".filter-button").addClass("act-filter");
-    $(".filter-button").on("click", function() {
-		if ($(this).hasClass("act-filter")){
-			showfilter();
-		}
-		else {
-			hidefilter();
-		}
-		return false;
-    });
-    function showfilter() {
-		$(".filter-button").removeClass("act-filter");
-        $(".hid-filter").slideDown(500);
-        $(".resize-carousel-holder").addClass("visfilb");
+	// $(".filter-button").addClass("act-filter");
+  //   $(".filter-button").on("click", function() {
+		// if ($(this).hasClass("act-filter")){
+		// 	showfilter();
+		// }
+		// else {
+		// 	hidefilter();
+		// }
+		// return false;
+  //   });
+  //   function showfilter() {
+		// $(".filter-button").removeClass("act-filter");
+  //       $(".hid-filter").slideDown(500);
+  //       $(".resize-carousel-holder").addClass("visfilb");
+  //   }
+  //   function hidefilter() {
+		// $(".filter-button").addClass("act-filter");
+  //       $(".hid-filter").slideUp(500);
+  //       $(".resize-carousel-holder").removeClass("visfilb");
+  //   }
+  $('.filter-button').click(function(e) {
+    var filter = $(this).data('count');
+    $('.filter-button').removeClass('act-filter');
+    $(this).addClass('act-filter');
+    if($(".hid-filter[data-count = " + filter + "]").is(':hidden')){
+      $(".hid-filter").hide()
+      $(".hid-filter[data-count = " + filter + "]").slideDown(500);
     }
-    function hidefilter() {
-		$(".filter-button").addClass("act-filter");
-        $(".hid-filter").slideUp(500);
-        $(".resize-carousel-holder").removeClass("visfilb");
+    else{
+      $(".hid-filter[data-count = " + filter + "]").slideUp(500);
     }
+  });
 	// Team hover  ------------------
     $(".team-box").hover(function() {
         $(this).find("ul.team-social").fadeIn();
