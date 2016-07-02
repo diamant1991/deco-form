@@ -91,7 +91,6 @@ h6 {
 	font-weight: 200;
 }
 p {
-	text-align:left;
 	font-size: 14px;
 	line-height: 20px;
 	padding-bottom:10px;
@@ -3102,15 +3101,11 @@ article .section-title {
 	border-bottom:1px solid #000;
 	padding-bottom:20px;
 }
-.widget h3 {
+.widget > h3 {
 	float:left;
 	width:100%;
 	position:relative;
-	font-size:14px;
-	text-transform:uppercase;
 	color:#000;
-	font-weight:600;
-	letter-spacing:2px;
 	padding-bottom:20px;
 }
 .widget-posts li {

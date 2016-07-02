@@ -326,6 +326,146 @@ header.fixed .nav-holder{
 .description{
 	text-align: left;
 }
+.block-header{
+	text-align: center;
+	padding-top: 30px;
+}
+.block-header h1:after{
+	margin: 15px auto;
+}
+.brand-carousel{
+	text-align: left;
+	margin-top: 50px;
+}
+.brand-carousel h2{
+	margin-bottom: 50px;
+}
+.ser-title_bottom {
+  position: absolute;
+  bottom: 30px;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  top: auto;
+  text-align: center;
+}
+.ser-title_bottom h3{
+	color: #fff;
+  font-weight: 400;
+  position: relative;
+  display: inline-table;
+}
+.ser-title_bottom h3:after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 1px;
+  margin: auto;
+  background: #fff;
+  margin-top: 10px;
+}
+.serv-item_col-3{
+	width: 33.3%;
+}
+.services-holder_second{
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+.custom-link-holder h3:after{
+	content: "";
+	display: block;
+	height: 3px;
+	width: 100px;
+	margin: 10px 0;
+	background: #000;
+	margin: 20px auto;
+}
+.custom-link-holder p{
+	margin-bottom: 20px;
+}
+.gallery-item_news{
+	width: 33.3%;
+}
+.bg-block{
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+}
+.news-item__img{
+	height: 250px;
+}
+.news-item{
+	position: relative;
+	overflow: hidden;
+}
+.news-item > a{
+	display: block;
+	color: #fff;
+}
+.news-info{
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	padding-top: 10px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.news-info h3:after{
+	content: "";
+	display: block;
+	height: 3px;
+	width: 100px;
+	margin: 10px auto;
+	background: #fff;
+}
+.news-descr{
+	height: 155px;
+}
+.news-date{
+	position: absolute;
+	z-index: 2;
+	right: 15px;
+	bottom: 10px;
+}
+.blog-text{
+	text-align: left;
+}
+.news-btn{
+	border-top: 1px solid #eee;
+	padding: 30px 0;
+}
+.news-btn li{
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+.news-btn li a{
+	font-weight: 600;
+}
+.widget{
+	border-bottom: 0;
+}
+.widget > h3:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100px;
+  margin: 10px 0;
+  background: #000;
+}
+.widget .news-item{
+	margin-bottom: 20px;
+}
+.section-title.dec-title span:before{
+	content: none;
+}
+section.no-pad{
+	padding: 0;
+}
+
+
 
 @media(max-width: 1036px){
 	header{
