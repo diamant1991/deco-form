@@ -520,24 +520,24 @@ function initMonolit() {
 	// Team hover  ------------------
     $(".team-box").hover(function() {
         $(this).find("ul.team-social").fadeIn();
-        $(this).find(".team-social a").each(function(a) {
+        $(this).find(".team-social span").each(function(a) {
             var b = $(this);
             setTimeout(function() {
                 b.animate({
                     opacity: 1,
                     top: "0"
                 }, 400);
-            }, 150 * a);
+            }, 100 * a);
         });
     }, function() {
-        $(this).find(".team-social a").each(function(a) {
+        $(this).find(".team-social span").each(function(a) {
             var b = $(this);
             setTimeout(function() {
                 b.animate({
                     opacity: 0,
                     top: "50px"
                 }, 400);
-            }, 150 * a);
+            }, 100 * a);
         });
         setTimeout(function() {
             $(this).find("ul.team-social").fadeOut();
@@ -633,8 +633,21 @@ function initMonolit() {
         $(".sb-overlay").addClass("vis-overlay");
 		return false;
     });
+    $(".save-btn").on("click", function(a) {
+        a.preventDefault();
+        $(".hid-massanger").addClass("vissb");
+        setTimeout(function() {
+            $(".scale-callback").addClass("scale-bg5");
+        }, 450);
+        setTimeout(function() {
+            $(".sb-inner").addClass("sb-innervis");
+        }, 800);
+        $(".sb-overlay").addClass("vis-overlay");
+        return false;
+    });
     $(".close-sidebar , .sb-overlay").on("click", function() {
         $(".hid-sidebar").removeClass("vissb");
+        $(".hid-massanger").removeClass("vissb");
         $(".sb-inner").removeClass("sb-innervis");
         $(".scale-callback").removeClass("scale-bg5");
         $(".sb-overlay").removeClass("vis-overlay");
