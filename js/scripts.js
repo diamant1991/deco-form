@@ -527,7 +527,7 @@ function initMonolit() {
                     opacity: 1,
                     top: "0"
                 }, 400);
-            }, 100 * a);
+            }, 50 * a);
         });
     }, function() {
         $(this).find(".team-social span").each(function(a) {
@@ -537,11 +537,11 @@ function initMonolit() {
                     opacity: 0,
                     top: "50px"
                 }, 400);
-            }, 100 * a);
+            }, 50 * a);
         });
         setTimeout(function() {
             $(this).find("ul.team-social").fadeOut();
-        }, 150);
+        }, 100);
     });
 	// Scroll window ------------------
     $(".to-top").click(function() {
@@ -837,7 +837,64 @@ if(window.matchMedia('(min-width: 767px)').matches){
   });
 }
 
+$(function() {
+  $(".select-all").click(function (e) {
+    e.preventDefault();
+    if($(this).hasClass('no-show')){
+      $(this).text('Снять выделение');
+      $(this).removeClass('no-show');
+      $(this).addClass('show');
+      $('.checkbox').each(function() {
+        if(!$(this).hasClass('active')){
+          $(this).addClass('active')
+          $(this).attr('checked', true)
+        }
+      });
+    }
+    else{
+      $(this).text('Выделить все');
+      $(this).removeClass('show');
+      $(this).addClass('no-show');
+      $('.checkbox').each(function() {
+        if($(this).hasClass('active')){
+          $(this).removeClass('active')
+          $(this).attr('checked', false)
+        }
+      });
+    }
+  });
+});
 
+$(function() {
+  $('.idea-checkbox label').click(function(e) {
+    var check = $(this).prev()
+    if(check.hasClass('active')){
+      check.removeClass('active')
+      check.attr('checked', false)
+    }
+    else{
+      check.addClass('active')
+      check.attr('checked', true)
+    }
+  });
+});
+
+$(function() {
+  $('.add-ideas').click(function() {
+    var plus = $(this).find('.fa-plus'),
+        minus = $(this).find('.fa-minus');
+    if(!$(this).hasClass('active')){
+      $(this).addClass('active')
+      minus.removeClass('hidden');
+      plus.addClass('hidden');
+    }
+    else{
+      $(this).removeClass('active')
+      plus.removeClass('hidden');
+      minus.addClass('hidden');
+    }
+  });
+});
 
 $(document).ready(function() {
     initMonolit();

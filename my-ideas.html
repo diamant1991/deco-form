@@ -30,7 +30,7 @@
     <!--=============== header ===============--> 
     <header>
       <!-- header-inner  -->
-      <div class="header-inner">
+      <div class="header-inner clearfix">
         <!-- header logo -->
         <div class="logo-holder">
             <a href="index.html"><img src="images/logo.png" alt=""></a>
@@ -99,6 +99,7 @@
       <!-- share button  -->
       <a href="#" class="show-share isShare">
         <span>Мои идеи</span>
+        <div class="idea-count">3</div>
         <i class="fa fa-chain-broken"></i>
       </a>
       <!-- share  end-->
@@ -109,10 +110,12 @@
           <div class="container">
             <!-- works -->
             <div class="works clear clearfix">
-              <h1>Мои идеи</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum facere facilis, voluptas temporibus eos consectetur. Rerum unde delectus id dolores, incidunt repellendus vitae provident itaque repudiandae saepe labore beatae? Repudiandae ipsa est error architecto labore, praesentium minima, quo! Nihil mollitia, ipsa quos assumenda fuga debitis aspernatur, perspiciatis veniam explicabo et.
-              </p>
+              <div class="my-idea-title clearfix">
+                <h1>Мои идеи</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum facere facilis, voluptas temporibus eos consectetur. Rerum unde delectus id dolores, incidunt repellendus vitae provident itaque repudiandae saepe labore beatae? Repudiandae ipsa est error architecto labore, praesentium minima, quo! Nihil mollitia, ipsa quos assumenda fuga debitis aspernatur, perspiciatis veniam explicabo et.
+                </p>
+              </div>
               <!-- filter -->
               <div class="filter-holder inline-filter">
                 <div class="gallery-filters">
@@ -140,6 +143,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/2.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -165,6 +169,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -190,6 +195,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -215,6 +221,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -240,6 +247,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -265,6 +273,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -290,6 +299,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -315,6 +325,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -340,6 +351,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -365,6 +377,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -390,6 +403,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img  src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -415,6 +429,7 @@
                     </a>
                     <a class="add-ideas">
                       <i class="fa fa-plus"></i>
+                      <i class="fa fa-minus hidden"></i>
                     </a>
                     <img src="images/folio/thumbs/1.jpg"    alt="">
                     <div class="port-desc-holder">
@@ -433,11 +448,11 @@
               <div class="idea-filter">
                 <div class="container">
                   <div class="idea-filter__block clearfix">
-                    <div class="count-folio round-counter pull-left">
+                    <div class="count-folio round-counter pull-left clearfix">
                       <div class="num-album">0</div>
                       <div class="all-album">12</div>
                     </div>
-                    <a href="#" class="idea-button select-all">
+                    <a href="#" class="idea-button select-all no-show">
                       Выделить все
                     </a>
                     <a href="#" class="idea-button send-manager show-hid-sidebar">
@@ -445,6 +460,10 @@
                     </a>
                     <a href="#" class="idea-button save-btn">
                       Сохранить к себе
+                    </a>
+                    <a class="forget-idea pull-right">
+                      <span>Забыть идею</span>
+                      <i class="fa fa-minus" aria-hidden="true"></i>
                     </a>
                   </div>
                 </div>
@@ -536,7 +555,7 @@
 
   <!-- Hidden sidebar-->
     <div class="sb-overlay"></div>
-    <div class="hid-sidebar hid-massanger">
+    <div class="hid-sidebar">
       <div class="container small-container">
         <div class="sidebar-wrap">
           <div class="sb-bg"></div>
@@ -578,10 +597,30 @@
               </div>
               <div id="message"></div>
               <form action="" name="contactform" id="contact-form">
-                <input name="email" type="text" id="email" onClick="this.select()" value="E-mail" >  
-                <button type="submit"  id="submit"><span>Отправить</span></button>                                 
+                <input name="email" type="text" id="email" onClick="this.select()" value="E-mail" >
+                <div class="modal-footer clearfix">
+                  <div class="pull-left">
+                    <button type="submit"  id="submit"><span>Отправить</span></button> 
+                    <button class="modal-btn">
+                      <span>Сохранить на устройство</span>
+                    </button>
+                  </div>
+                  <div class="pull-right">
+                    <div class="modal-social clearfix">
+                      <a href="#">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>                     
               </form>
-          </div>
+            </div>
           </div>
         </div>
       </div>
