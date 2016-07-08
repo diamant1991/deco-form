@@ -1,12 +1,15 @@
-$(window).load(function() {
+if(window.matchMedia('(min-width: 767px)').matches){
+  $(window).load(function() {
     "use strict";
-    $(".loader").fadeOut(500, function() {
-        $("#main").animate({
-            opacity: "1"
-        },function(){contanimshow();});
-    });
+      $(".loader").fadeOut(500, function() {
+          $("#main").animate({
+              opacity: "1"
+          },function(){contanimshow();});
+      });
 
-});
+  });
+}
+
 function initMonolit() {
     "use strict";
 	// Owl carousel ------------------

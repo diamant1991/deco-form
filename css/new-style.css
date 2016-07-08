@@ -792,6 +792,12 @@ section.no-pad{
 		top: 0;
 		margin: auto;
 	}
+	.loader{
+		display: none;
+	}
+	#main{
+		opacity: 1;
+	}
 	.map-box_contact{
 		margin: 30px auto;
 		height: 300px;
