@@ -29,6 +29,16 @@
 */
 /*-------------Import fonts ---------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,200,100,400italic,700,900|Muli&subset=latin,vietnamese,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek);
+
+/* font-family: "CormorantRegular"; */
+@font-face {
+	font-family: "CormorantRegular";
+	src: url('../fonts/Cormorant/CormorantRegular.eot');
+  src: url('../fonts/Cormorant/CormorantRegular.eot?#iefix') format('embedded-opentype'),
+	url("../fonts/Cormorant/CormorantRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
 /*-------------General Style---------------------------------------*/
 html{
 	height:100%;
@@ -37,7 +47,7 @@ html{
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	font-weight: 400;
 	font-size: 12px;
 	color: #000;
@@ -270,7 +280,7 @@ blockquote p {
 	position:relative;
 	z-index:3;
 	float:left;
-	background:#fff;
+	background:#EEECE9;
 }
 .pad-con {
 	padding-top:120px;
@@ -662,15 +672,67 @@ header{
 	z-index:20;
 	height: 120px;
 	width: 100%;
-	background:#000;
+	background:#fff;
 	-webkit-transform: translate3d(0,0,0);
 }
 .fw-head {
 	width:100%;
 }
 .nav__portfolio{
-	border-top: 1px solid rgba(255,255,255,0.21);
+	border-top: 1px solid #D0CCCD;
+	padding-top: 6px;
 }
+.nav__portfolio div {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.nav__portfolio li:nth-child(1) div {
+	background-image: url("../images/header/14.png");
+}
+.nav__portfolio li:hover:nth-child(1) div {
+	background-image: url("../images/header/13.png");
+	}
+.nav__portfolio li:nth-child(2) div {
+	background-image: url("../images/header/4.png");
+}
+.nav__portfolio li:hover:nth-child(2) div {
+	background-image: url("../images/header/3.png");
+	}
+.nav__portfolio li:nth-child(3) div {
+	background-image: url("../images/header/2.png");
+}
+.nav__portfolio li:hover:nth-child(3) div {
+	background-image: url("../images/header/1.png");
+	}
+.nav__portfolio li:nth-child(4) div {
+	background-image: url("../images/header/6.png");
+}
+.nav__portfolio li:hover:nth-child(4) div {
+	background-image: url("../images/header/5.png");
+	}
+.nav__portfolio li:nth-child(5) div {
+	background-image: url("../images/header/10.png");
+}
+.nav__portfolio li:hover:nth-child(5) div {
+	background-image: url("../images/header/9.png");
+	}
+.nav__portfolio li:nth-child(6) div {
+	background-image: url("../images/header/12.png");
+}
+.nav__portfolio li:hover:nth-child(6) div {
+	background-image: url("../images/header/11.png");
+	}
+
+
+.nav__portfolio span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 63px;
+}
+.nav__portfolio img
 header:before {
 	content:'';
 	position:absolute;
@@ -695,7 +757,8 @@ header:before {
 	position: absolute;
   width: 90px;
   z-index: 21;
-  top: 20px;
+  top:50%;
+  margin-top: -37px;
   left: 30px;
 }
 .logo-holder img {
@@ -769,11 +832,11 @@ nav li a {
 	float: left;
 	padding: 5px 15px;
 	line-height: 1;
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #fff;
-	font-family: 'Muli', sans-serif;
+	color: #ACACAC;
+	font-family: 'CormorantRegular', sans-serif;
 	font-weight:600;
 	position:relative;
 	z-index:2;
@@ -783,13 +846,17 @@ nav li a {
     -ms-transition: all 100ms linear;
     transition: all 100ms linear;
 }
+.nav__menu a {
+	padding: 5px 30px;
+}
+
 nav li ul a {
 	width:100%;
 	text-align:left;
 	padding:9px 12px;
 	font-weight:300;
 }
-nav li a:before {
+/*nav li a:before {
 	content:'';
 	position:absolute;
 	bottom:-4px;
@@ -802,7 +869,7 @@ nav li a:before {
     -o-transition: all 300ms linear;
     -ms-transition: all 300ms linear;
     transition: all 300ms linear;
-}
+}*/
 nav li a.act-link:before {
 	width:25px;
 }
@@ -814,7 +881,7 @@ nav li ul a.act-link {
 	font-weight:600;
 }
 nav li a:hover {
-	color:rgba(255,255,255,0.61);
+	color:#251E1F;
 }
 /*------ Home -------------------------------------------------*/
 .hero-wrap {
@@ -846,7 +913,7 @@ nav li a:hover {
 	text-transform:uppercase;
 	font-weight:600;
 	letter-spacing:2px;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	padding-bottom:10px;
     position:relative;
 	z-index:12;
@@ -1069,12 +1136,10 @@ article {
 	left:0;
 	width:100%;
 	height:100%;
-	background:rgba(0,0,0,0.21);
+	background:#fff;
 	z-index:2;
 }
-.act-ser .serv-item-inner:before  {
-	background:rgba(0,0,0,0.41);
-}
+
 .ser-title {
 	position:absolute;
 	top: 0;
@@ -1082,12 +1147,12 @@ article {
 	width:100%;
 	left:0;
 	text-align: left;
-	color: #fff;
+	color: #1D1719;
 	padding: 10px 30px;
 }
 .ser-title h1:after,
 .ser-title h2:after{
-	background: #fff;
+	background: #1D1719;
 	margin-bottom: 20px;
 }
 .act-ser  .ser-title {
@@ -1112,7 +1177,7 @@ article {
 .serv-details h3 {
 	font-size:15px;
 	text-transform:uppercase;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	font-weight:600;
 	padding-bottom:10px;
 }
@@ -1126,7 +1191,7 @@ article {
 	width:100%;
 	float:left;
 	margin-bottom:4px;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	color:#000;
 	padding-left:10px;
  	font-weight:600;
@@ -1313,7 +1378,7 @@ article {
 	float:left;
 	padding-left:30px;
 	font-size: 10px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'CormorantRegular', sans-serif;
     line-height: 12px;
     text-transform: uppercase;
     padding-left: 63px;
@@ -1351,7 +1416,7 @@ article {
 .inline-filter .count-folio div {
 	display: inline-table;
 	padding-left:15px;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	font-size:12px;
 	position:relative;
 	font-weight:500;
@@ -1399,7 +1464,7 @@ article {
 	padding:5px 15px;
 	border:1px solid rgba(255,255,255,0.21);
 	font-size:10px;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	font-weight:600;
 	letter-spacing:1px;
 }
@@ -1432,7 +1497,7 @@ article {
 	margin:0 10px;
 	font-size:10px;
 	color:#fff;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 }
 .hid-filter {
 	float:left;
@@ -2115,7 +2180,7 @@ article {
 }
 .hid-sidebar h4  {
 	font-size:15px;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	font-weight:900;
 }
 .hid-sidebar .separator   {
@@ -2134,7 +2199,7 @@ article {
 .pd-holder h5 {
 	float:left;
 	font-size: 10px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'CormorantRegular', sans-serif;
     line-height: 12px;
     text-transform: uppercase;
     position: relative;
@@ -2397,7 +2462,7 @@ article {
 	padding-bottom:4px;
 }
 .team-info h4 {
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	font-weight:300;
 	font-size:11px;
 }
@@ -2609,7 +2674,7 @@ footer.fixed-footer .footer-social li a:hover {
 	left:0;
 	width:100%;
 	padding:90px 20px 90px 80px;
-	background:#1B1B1B;
+	background:#fff;
 	z-index:2;
 }
 .content-footer:before {
@@ -2657,7 +2722,7 @@ footer.fixed-footer .footer-social li a:hover {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #fff;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	font-weight:600;
 }
 .footer-title  a {
@@ -2668,13 +2733,13 @@ footer.fixed-footer .footer-social li a:hover {
     -o-transition: all 200ms linear;
     -ms-transition: all 200ms linear;
     transition: all 200ms linear;
-	color:#fff;
+	color:#000;
 }
 .footer-item {
 	float:left;
 	width:100%;
 	text-align:left;
-	color:#fff;
+	color:#000;
 }
 .footer-item h4 {
 	width:100%;
@@ -2682,7 +2747,7 @@ footer.fixed-footer .footer-social li a:hover {
 }
 .footer-item p , .footer-item  span  , .footer-item ul li a{
 	font-size:11px;
-	color:#fff;
+	color: #000000;
 }
 .footer-item ul li {
 	float:left;
@@ -2696,10 +2761,10 @@ footer.fixed-footer .footer-social li a:hover {
 	letter-spacing:1px;
 }
 .footer-item .text-link{
-	color:#fff;
+	color:#000;
 }
 .footer-item .text-link:before  {
-	background:#fff;
+	background:#000;
 }
  .footer-logo  img {
 	 margin-bottom:20px;
@@ -2713,7 +2778,7 @@ footer.fixed-footer .footer-social li a:hover {
 	padding-top:25px;
 	margin-top:15px;
 	position:relative;
-	border-top:1px solid rgba(255,255,255,0.21)
+	border-top:1px solid #000;
 }
 .footer-wrap:before {
 	content:'';
@@ -2722,7 +2787,7 @@ footer.fixed-footer .footer-social li a:hover {
 	right:22px;
 	width:6px;
 	height:6px;
-	background:#fff;
+	background:#000;
 	border-radius:100%;
 	-webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
@@ -2736,14 +2801,14 @@ footer.fixed-footer .footer-social li a:hover {
 .copyright {
 	float:left;
 	text-align:left;
-	color:#fff;
+	color:#000;
 	font-size:11px;
 	text-transform:uppercase;
 	letter-spacing:1px;
 }
 .to-top {
 	float:right;
-	color:#fff;
+	color:#000;
 	text-transform:uppercase;
 	letter-spacing:1px;
 	font-size:12px;
@@ -2839,7 +2904,7 @@ footer.fixed-footer .footer-social li a:hover {
 	font-weight:800;
 	font-size:12px;
 	color:#000;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	-webkit-appearance: none;
 	-webkit-transition: all 200ms linear;
   -moz-transition: all 200ms linear;
@@ -3003,7 +3068,7 @@ footer.fixed-footer .footer-social li a:hover {
 	float:left;
 	padding-left:30px;
 	font-size: 10px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'CormorantRegular', sans-serif;
     line-height: 12px;
     text-transform: uppercase;
     padding-left: 63px;
@@ -3205,13 +3270,13 @@ article .section-title {
 }
 .cat-item a{
 	font-size:14px;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	color:#000;
 	text-transform:uppercase;
 }
 .lg-sub-html {
 	font-size:12px;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	color:#fff;
 	text-transform:uppercase;
 }
@@ -3461,44 +3526,23 @@ article .section-title {
 .show-share {
 	position:absolute;
 	top:19px;
-	right:50px;
+	right:70px;
 	z-index:21;
 	cursor:pointer;
 	color:rgba(255,255,255,0.21);
-	width:40px;
-	height:40px;
-	line-height:40px;
-	text-align:center !important;
-	border:1px solid rgba(255,255,255,0.41);
+	width:70px;
+	height:100px;
 }
-.show-share span {
-	color:#fff;
-	position:absolute;
-	left:-100%;
-	margin-left:-15px;
-	top:-15px;
-	opacity:0;
-	line-height: 1;
-	font-size: 10px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-family: 'Muli', sans-serif;
-	font-weight:600;
-	z-index:2;
-	text-decoration:line-through;
-	-webkit-transition: all 200ms linear;
-    -moz-transition: all 200ms linear;
-    -o-transition: all 200ms linear;
-    -ms-transition: all 200ms linear;
-    transition: all 200ms linear;
-}
-.show-share:hover span {
-	opacity:1;
-	top:15px;
-}
+
 .show-share.isShare {
-	color:#fff;
-	border:1px solid rgba(255,255,255,0.21);
+	color:#4A4647;
+	background: url("../images/header/8.png") no-repeat;
+		background-size: contain;
+}
+.show-share.isShare:hover {
+	
+	background: url("../images/header/7.png") no-repeat;
+	background-size: contain;
 }
 .show-share.isShare span {
 	text-decoration:none;
@@ -3554,7 +3598,7 @@ article .section-title {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #fff;
-	font-family: 'Muli', sans-serif;
+	font-family: 'CormorantRegular', sans-serif;
 	font-weight:600;
 	position:relative;
 	z-index:2;
@@ -3642,13 +3686,35 @@ article .section-title {
 	margin-bottom:15px;
 }
 }
+
+@media only screen and (max-width: 1200px) {
+.show-share { 
+	right:20px; 
+}
+.logo-holder {
+	left: 5px;
+}
+}
+@media only screen and (max-width: 1100px) {
+.show-share { 
+	right:0px; 
+}
+.logo-holder {
+	left: 0px;
+	width: 65px;
+}
+}
 @media(min-width: 1037px){
 	header{
 		position: relative;
 	}
-}
 
+}
 @media only screen and  (max-width: 1036px) {
+		.logo-holder {
+    left: 24px;
+    top: 50px;
+}
 .hid-gal {
 	overflow:auto;
 }
@@ -3665,13 +3731,14 @@ header {
 	display:block;
 }
 .show-share {
-	right:30px;
+    right: 10px;
+    top: 6px;
 }
 .nav-button {
 	float:right;
 	width:40px;
 	height:40px;
-	border:1px solid rgba(255,255,255,0.21);
+	border:1px solid #000;
 	padding:13px 6px 6px 6px;
 	position:relative;
 	margin-top:9px;
@@ -3681,7 +3748,7 @@ header {
 	float:left;
 	width:100%;
 	height:2px;
-	background:#fff;
+	background:#000;
 	margin-bottom:4px;
 	position:relative;
 }

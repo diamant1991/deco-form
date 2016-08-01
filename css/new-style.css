@@ -90,22 +90,22 @@
   margin-right: 10px;
   cursor: pointer;
   height: 30px;
-  border: 2px solid #CDD1DA;
+  border: 2px solid #C3C5C8;
   border-radius: 50%;
   background: transparent !important;
 }
 .carousel-text .owl-dots .owl-dot.active:before{
-	content: '';
-  position: absolute;
-  top: 1px;
-  left: 50%;
-  margin-left: -12px;
-  display: block;
-  width: 24px;
-  height: 23px;
-  border-radius: 50%;
-  background: #fff;
-  transition: all .2s;
+	    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    margin-left: -14px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #858488;
+    transition: all .2s;
 }
 .carousel-text .owl-dots{
 	position: absolute;
@@ -335,11 +335,40 @@ header.fixed .nav-holder{
 	margin-right: 10px;
 	border: 1px solid transparent;
 }
-.work-icon.active{
-	border-color: #000;
+
+.work-icon_img {
+	width: 80px;
+	height: 80px;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
-.work-icon img{
-	transform: none !important;
+.work-wrapp .work-icon:nth-child(1) .work-icon_img {
+	background-image: url("../images/work/6.png");
+}
+.work-wrapp .work-icon:hover:nth-child(1) .work-icon_img,
+.work-wrapp .work-icon.active:nth-child(1) .work-icon_img {
+	background-image: url("../images/work/5.png");
+}
+.work-wrapp .work-icon:nth-child(2) .work-icon_img {
+	background-image: url("../images/work/8.png");
+}
+.work-wrapp .work-icon:hover:nth-child(2) .work-icon_img,
+.work-wrapp .work-icon.active:nth-child(2) .work-icon_img {
+	background-image: url("../images/work/7.png");
+}
+.work-wrapp .work-icon:nth-child(3) .work-icon_img {
+	background-image: url("../images/work/4.png");
+}
+.work-wrapp .work-icon:hover:nth-child(3) .work-icon_img,
+.work-wrapp .work-icon.active:nth-child(3) .work-icon_img {
+	background-image: url("../images/work/3.png");
+}
+.work-wrapp .work-icon:nth-child(4) .work-icon_img {
+	background-image: url("../images/work/2.png");
+}
+.work-wrapp .work-icon:hover:nth-child(4) .work-icon_img,
+.work-wrapp .work-icon.active:nth-child(4) .work-icon_img {
+	background-image: url("../images/work/1.png");
 }
 .social-list a{
 	display: inline-block;
@@ -348,9 +377,9 @@ header.fixed .nav-holder{
 	height: 40px;
 	text-align: center;
 	line-height: 38px;
-	border: 1px solid #fff;
+	border: 1px solid #000;
 	border-radius: 50%;
-	color: #fff;
+	color: #000;
 	font-size: 16px;
 	margin-right: 10px;
 }
@@ -794,8 +823,8 @@ section.no-pad{
 .idea-count{
 	position: absolute;
 	z-index: 2;
-	right: 3px;
-	top: 3px;
+	right: 31px;
+	top: 16px;
 	line-height: 1;
 	font-size: 15px;
 }
